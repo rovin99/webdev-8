@@ -1,0 +1,15 @@
+// Styling for the contact section
+section#contact {
+    background-color: $gray-darker;
+    background-repeat: no-repeat;
+    background-position: center;
+    .section-heading {
+        color: white;
+    }
+
+    .social-icons {
+        -webkit-filter: hue-rotate(180deg);
+        filter: hue-rotate(180deg);
+    }
+}
+

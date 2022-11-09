@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+    <meta name="description" content="Technical Council Website.">
+    <meta name="author" content="DEV3">
+    <meta name="google-site-verification" content="pilOELL070g4ZRJuS4qyddt3hMPIQ0oSCaJTHxhDUw0" />
+
+    <title>Technical Council Website</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/user.css">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+        
+        @media (max-width: 576px) {
+            nav>.container {
+                width: 100%;
+            }
+        }
+        
+        section#upcoming_events {
+            background-color: #d5dfee;
+        }
+        
+        section#team {
+            background-color:#d5dfee;
+        }
+        
+        section#activities {
+            background-color:#d5dfee;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                width: 100%;
+            }
+        }
+        /* Center the loader */
+        
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #eaea20;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* Add animation to "page content" */
+        
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+        
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+        
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+        
+        #myDiv {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body id="page-top" onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+        <!-- Navigation -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="mainNav">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <img src="img/logo.png" width="45" height="45" style="margin-top:-1;" alt="stucologo">
+                </a>
+                <a class="navbar-brand" href="#page-top">Technical Council IITGN</a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#CLUBS">Club Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="masthead">
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-heading animated bounce">Technical Council IITGN</div>
+                    <div class="intro-lead-in animated bounce">Indian Institute Of Technology Gandhinagar</div>
+                    <div><img src="img/logo.png" class="slogo animated bounceInUp" width="150px" height="auto"></div>
+                </div>
+            </div>
+        </header>
+
+
+        
+        <!-- Club Page -->
+        <section class="bg-faded" id="CLUBS" name=""CLUBS">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">CLUBS </h2>
+                        <h3 class="section-subheading text-muted">Lots of technical events are conducted in each clubs</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3 class="section-heading">Click on Clubs Logo to get their official website.</h3>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                            <img class="img-fluid" src="img/activities/metis.jpg" alt="metis">
+                        </div>
+                        <br>
+                        <div class="portfolio-caption">
+                            <h4>Metis</h4>
+                            <a href="https://students.iitgn.ac.in/codingclub/?q=student/codingclub/"></a>
+                            <p class="text-muted">Coding Club, at IITGN aims at spreading knowledge related to computer programming to the students</p>
+                            <p>Club Secretary: Hitarth Gandhi and Reuben Devanesan</p>
+                            <P>E-mail : coding@iitgn.ac.in</p>
+                            <a href="https://students.iitgn.ac.in/codingclub/?q=student/codingclub/" target="_blank"></a>
+                                
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                            <img class="img-fluid" src="img/activities/frday-thumb.jpg" alt="frday">
+                        </div>
+                        <br>
+                        <div class="portfolio-caption">
+                            <h4>Mean Mechanics</h4>
+                            <p class="text-muted">Believing in the philosophy of "Learning through Application"</p>
+                            <p>Club Secretary: Sneha Sawale</p>
+                            <P>E-mail : Sneha@iitgn.ac.in</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                            <img class="img-fluid" src="img/activities/hoc-thumb.png" alt="hoc">
+                        </div>
+                        <br>
+                        <div class="portfolio-caption">
+                            <h4>Odyssey </h4>
+                            <p class="text-muted">The Odyssey club of IITGN attempts to foster the knowledge and participation of students of the institute in the field of astronomy</p>
+                            <p>Club Secretary: Deep Thakker</p>
+                            <P>E-mail : Deep@iitgn.ac.in</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                            <img class="img-fluid" src="img/activities/digis.jpg" alt="digis">
+                        </div>
+                        <br>
+                        <div class="portfolio-caption">
+                            <h4>DigiS</h4>
+                            <p class="text-muted">Digis is the digital sports development club of IIT Gandhinagar.</p>
+                            <p>Club Secretary: Mayur Moore</p>
+                            <P>E-mail : Mayur@iitgn.ac.in</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                            <img class="img-fluid" src="img/activities/torque.png" alt="torque">
+                        </div>
+                        <br>
+                        <div class="portfolio-caption">
+                            <h4>Torque</h4>
+                            <p class="text-muted">TORQUE, is the student-run Annual Magazine of IIT Gandhinagar. With a mission to feature, showcase and highlight the immensely talented community of the institute, TORQUE strives to provide a platform to exhibit and layout the year long activities conducted by the various clubs and independent projects undertaken by the students.</p>
+                            <p>Club Secretary: Sneha Sawale</p>
+                            <P>E-mail : Sneha@iitgn.ac.in</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Team -->
+        <section class="bg-faded" id="team" name="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Technical Clubs And Their Secretary</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="team-member animated fadeInLeft">
+                            <img class="w3-round-xxlarge" src="img\activities\metis.jpg" alt="Metis">
+                            <h4></h4>
+                            <p class="text-muted">Club Secretory of Metis<br>Hitarth Gandhi and Reuben Devanesan</p>
+                            <ul class="list-inline social-buttons">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/metisiitgn/" target="blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="team-member animated fadeInRight">
+                            <img class="w3-round-xxlarge" src="img\activities\frday-thumb.jpg" alt="frday">
+                            <h4>MEAN MECHANICS</h4>
+                            <p class="text-muted">Secretary<br>Sneha Sawale</p>
+                            <ul class="list-inline social-buttons">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/meanmechanicsiitgn" target="blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="team-member animated fadeInRight">
+                            <img class="w3-round-xxlarge" src="img\activities\hoc-thumb.png" alt="hoc">
+                            <h4>ODYSSEY</h4>
+                            <p class="text-muted">Secretary<br>Deep Thakkar</p>
+                            <ul class="list-inline social-buttons">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/odysseyiitgn/" target="blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="team-member animated fadeInRight">
+                            <img class="w3-round-xxlarge" src="img\activities\digis.jpg" alt="digis">
+                            <h4>DIGIS</h4>
+                            <p class="text-muted">Secretary<br>Yash More</p>
+                            <ul class="list-inline social-buttons">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/dice.iitgn/" target="blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="team-member animated fadeInRight">
+                            <img class="w3-round-xxlarge" src="img\activities\torque.png" alt="torque">
+                            <h4>TORQUE</h4>
+                            
+                            <ul class="list-inline social-buttons">
+                                <li class="list-inline-item">
+                                    <a href="https://students.iitgn.ac.in/torque/About.html" target="blank"><i class="fa fa-globe"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <p class="large text-muted">But it takes a lot more than just indiviuals!</p>
+                    <a href="aboutus.html" class="btn btn-xl animated infinite tada">Know our entire team!</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Email -->
+        <section id="Email" name="Email">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center ">
+                        <h2 class="section-heading">Email Us</h2>
+                        <h3 class="section-subheading text-muted">technicalcouncil@iitgn.ac.in
+                        </h3>
+                    </div>
+                </div>
+        <!-- Contact -->
+        <section id="About" name="About">
+            <section id="contact" name="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center ">
+                            <h1 class="section-heading">About Us</h2>
+                            <h2 class="section-heading ">Technical Council IITGN is the student body that promotes and takes initiatives for the technical activities that happen at IIT Gandhinagar.</strong><br>
+                            <h2 class="section-heading">Our Mission : Technical Council strives hard to provide the students a platform to learn and critically understand the technologies that aids innovation and development, along with providing the resources that facilitates it. </strong><br>
+                            <h2 class="section-heading">Our Visions: We wish to create an environment that creates the future leaders in technology that make an impact on the world around us and also developing the culture that can facilitate doing so.</strong><br>
+                            <h2 class="section-heading">Our Future Plans: Consisting of four clubs of various domains, Tinkerers’ Lab and hobby groups that have been working on various genre of projects and activities, Technical Council strives to inculcate the culture of exploring and learning different fields.</strong><br>
+                            
+                        </div>
+                    </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy;Technical Council IITGN</span>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="copyright">Made by Dev3/span>
+                   </div>
+        </footer>
+    </div>
+    <!-- Event Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Metis Official Website </h2>
+                                <p class="item-intro text-muted">The Code-Blooded</p>
+                                <img class="img-fluid d-block mx-auto" src="img/activities/metis.jpg" alt="Metis">
+                                <a href="https://coding-iitgn.github.io/">Visit Metis githubpage</a>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>MEAN MECHANICS</h2>
+                                <p class="item-intro text-muted">Robotics club of IITGN </p>
+                                <img class="img-fluid d-block mx-auto" src="img\activities\frday-thumb.jpg" alt="frday">
+                                <p>
+                                    
+                                    <a href="https://www.linkedin.com/in/mean-mechanics-887b271b7/?originalSubdomain=in" target="blank">Linkedin Id</a>
+                                </p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Odyssey Club</h2>
+                                <p class="item-intro text-muted">The Astronomy Club Of IITGN!</p>
+                                <img class="img-fluid d-block mx-auto" src="img/activities/hoc-thumb.png" alt="hoc">
+                              <h5><a href="https://www.instagram.com/accounts/login/?next=/odyssey_astronomyclub_iitgn/">Instagram Page</a></h5>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>DIGIS</h2>
+                                <p class="item-intro text-muted">digital sports development club of IIT Gandhinagar.</p>
+                                <img class="img-fluid d-block mx-auto" src="img\activities\digis.jpg" alt="digis">
+                              <h5><a href="https://www.instagram.com/digis_iitgn/?hl=en">Instagram Page</a></h5>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal 5 -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>TORQUE</h2>
+                            <p class="item-intro text-muted">.</p>
+                            <img class="img-fluid d-block mx-auto" src="img/activities/torque.png" alt="torque">
+                          <h5><a href="https://www.linkedin.com/company/torque-iitgn/about/">Linkedin</a></h5>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+   
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+    <script type="text/javascript">
+        var images = new Array();
+
+        function preloadImages() {
+
+            for (i = 0; i < preloadImages.arguments.length; i++) {
+
+                images[i] = new Image();
+
+                images[i].src = preloadImages.arguments[i];
+
+            }
+
+        }
+
+        preloadImages("img/header-bg.jpg");
+    </script>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+     <!-- Footer -->
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Technical council IITGN</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="copyright">Made by DEV3</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item">
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="Events.html">Technical Events</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="aboutus.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
